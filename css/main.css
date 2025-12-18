@@ -355,7 +355,8 @@ h1.navbar-brand {
 }
 
 .slide-caption .caption-content {
-    vertical-align: middle;
+    vertical-align:middle;
+    
     display: table-cell;
 }
 
@@ -508,32 +509,38 @@ h1.navbar-brand {
 }
 
 /*=================================================================
-	About
+	Course
 ==================================================================*/
 
-#about {
-    background-color: #009EE3;
+#Course {
+        background-image: url(../img/parallax/corsebg.jpg);
+         padding: 0;
+         background-size: cover; /* 使背景图覆盖整个div区域 */
+    background-position: center; /* 背景图居中显示 */
+    background-repeat: no-repeat; /* 背景图不重复 */
+   /* background-color: #009EE3;*/
+
     color: #fff;
 }
 
-#about h3 {
+#Course h3 {
     color: #fff;
     margin: 0 0 35px;
     text-transform: uppercase;
 }
 
-#about .welcome-block h3 {
+#Course .welcome-block h3 {
     margin: 0 0 65px;
 }
 
-#about .welcome-block img {
+#Course .welcome-block img {
     border: 3px solid #fff;
     border-radius: 50%;
     margin-right: 35px;
     max-width: 100px;
 }
 
-#about .message-body {
+#Course .message-body {
     font-size: 13px;
     line-height: 20px;
     margin-bottom: 70px;
@@ -578,7 +585,8 @@ h1.navbar-brand {
     width: 85px;
     line-height: 101px;
 
-    -webkit-transform: rotate(47deg);
+   /* 取消了icon旋转
+   -webkit-transform: rotate(47deg);
        -moz-transform: rotate(47deg);
         -ms-transform: rotate(47deg);
          -o-transform: rotate(47deg);
@@ -589,14 +597,16 @@ h1.navbar-brand {
         -ms-transition: all 0.3s ease 0s;
          -o-transition: all 0.3s ease 0s;
             transition: all 0.3s ease 0s;
+    */
 }
 
+/* 取消了icon悬浮效果
 .service-item:hover .service-icon {
     border: 3px solid #009ee3;
     margin-bottom: 20px;
     color: #009ee3;
 }
-
+*/
 .service-icon i {
     -webkit-transform: rotate(-48deg);
        -moz-transform: rotate(-48deg);
@@ -1140,8 +1150,8 @@ textarea.form-control {
 
 @media (min-width: 980px) and (max-width: 1150px) {
 
-/*about*/
-    #about .welcome-block img {
+/*Course*/
+    #Course .welcome-block img {
         margin-bottom: 30px;
     }
 
@@ -1175,9 +1185,12 @@ textarea.form-control {
         font-size: 45px;
     }
 
-/* about */
+/* Course */
     .recent-works {
         margin-bottom: 50px;
+        background-color: rgba(255,255,255, 0.7); 
+        border-radius: 10px;
+        padding: 10px;
     }
 
     .service-item {
@@ -1265,25 +1278,25 @@ textarea.form-control {
         font-size: 22px;
     }
 
-/* about */
+/* Course */
     .recent-works {
         margin-bottom: 85px;
     }
 
-    #about h3 {
+    #Course h3 {
         font-size: 18px;
         margin: 0 0 35px !important;
     }
 
-    #about .owl-buttons {
+    #Course .owl-buttons {
         margin-top: 20px;
     }
 
-    #about .message-body {
+    #Course .message-body {
         margin-bottom: 45px;
     }
 
-    #about .welcome-block img {
+    #Course .welcome-block img {
         margin: 0 25px 15px 0;
     }
 
@@ -1383,9 +1396,9 @@ textarea.form-control {
         font-size: 35px;
     }
 
-/*about*/
+/*Course*/
 
-    #about .welcome-block h3 {
+    #Course .welcome-block h3 {
         margin: 0 0 35px;
     }
 
