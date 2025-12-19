@@ -1191,6 +1191,7 @@ textarea.form-control {
         background-color: rgba(255,255,255, 0.7); 
         border-radius: 10px;
         padding: 10px;
+        color: black;
     }
 
     .service-item {
