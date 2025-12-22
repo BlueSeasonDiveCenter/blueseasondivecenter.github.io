@@ -127,7 +127,7 @@ $(document).ready(function(){
 	
 	
 	
-	$("#works, #testimonial").owlCarousel({	 
+	$("#works, #Accommodation").owlCarousel({	 
 		navigation : true,
 		pagination : false,
 		slideSpeed : 700,

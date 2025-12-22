@@ -2,7 +2,7 @@
 *
 * ---------------------------------------------------------------------------
 *
-* Template : Blue - A One-Page HTML Portfolio/Business Template
+* Template : Blue - A One-Page HTML Divesite/Business Template
 * Author : Muhammad Morshd
 * Author URI : http://morsheds.com
 *
@@ -513,15 +513,11 @@ h1.navbar-brand {
 ==================================================================*/
 
 #Course {
-        background-image: url(../img/parallax/corsebg.jpg);
-         padding: 0;
-         background-size: cover; /* 使背景图覆盖整个div区域 */
-    background-position: center; /* 背景图居中显示 */
-    background-repeat: no-repeat; /* 背景图不重复 */
-   /* background-color: #009EE3;*/
-
+    background-image: url(../img/parallax/corsebg.jpg);
+    padding: 0;
     color: #fff;
 }
+
 
 #Course h3 {
     color: #fff;
@@ -621,7 +617,7 @@ h1.navbar-brand {
 }
 
 /*=================================================================
-	Portfolio
+	Divesite
 ==================================================================*/
 
 .project-wrapper {
@@ -635,7 +631,7 @@ h1.navbar-brand {
     display: inline-block;
 }
 
-.portfolio-item {
+.Divesite-item {
     cursor: pointer;
     margin: 0 1% 1% 0;
     overflow: hidden;
@@ -659,7 +655,7 @@ figcaption.mask {
             transition: all 0.4s ease 0s;
 }
 
-.portfolio-item:hover figcaption.mask {
+.Divesite-item:hover figcaption.mask {
     bottom: 0;
 }
 
@@ -705,7 +701,7 @@ ul.external li a:hover {
     color: #fff;
 }
 
-.portfolio-item:hover ul.external {
+.Divesite-item:hover ul.external {
     top: 0;
 }
 
@@ -732,32 +728,32 @@ ul.external li a:hover {
 }
 
 /*=================================================================
-	Testimonials
+	Accommodations
 ==================================================================*/
 
 
-#testimonials {
-    background-image: url(../img/parallax/testimonial.jpg);
+#Accommodations {
+    background-image: url(../img/parallax/corsebg.jpg);
     padding: 0;
     color: #fff;
 }
 
-#testimonials .sec-title h2:after {
+#Accommodations .sec-title h2:after {
     border-bottom: 1px solid #fff;
 }
 
-#testimonials .overlay {
+#Accommodations .overlay {
     background-color: rgba(15,155,224, 0.78);
     padding: 70px 0 40px;
 }
 
-.testimonial-item {
+.Accommodation-item {
     margin: 0 auto;
     padding-bottom: 50px;
     width: 64%;
 }
 
-.testimonial-item img {
+.Accommodation-item img {
     border: 3px solid #fff;
     border-radius: 50%;
     display: inline-block;
@@ -765,12 +761,12 @@ ul.external li a:hover {
     max-width: 100px;
 }
 
-.testimonial-item > div {
+.Accommodation-item > div {
     line-height: 30px;
     position: relative;
 }
 
-.testimonial-item > div:before {
+.Accommodation-item > div:before {
     background-image: url("../img/icons/quotes.png");
     background-repeat: no-repeat;
     bottom: 127px;
@@ -780,7 +776,7 @@ ul.external li a:hover {
     width: 45px;
 }
 
-.testimonial-item > div:after {
+.Accommodation-item > div:after {
     background-image: url("../img/icons/quotes.png");
     background-position: -58px 0;
     background-repeat: no-repeat;
@@ -791,25 +787,25 @@ ul.external li a:hover {
     width: 45px;
 }
 
-.testimonial-item > div > span {
+.Accommodation-item > div > span {
     display: inline-block;
     font-weight: 700;
     margin: 40px 0 30px;
     text-transform: uppercase;
 }
 
-#testimonials .owl-controls.clickable {
+#Accommodations .owl-controls.clickable {
     margin-top: 20px;
     text-align: center;
 }
 
-#testimonials .owl-buttons {
+#Accommodations .owl-buttons {
     border: 2px solid #fff;
     float: inherit;
 }
 
-#testimonials .owl-prev:hover,
-#testimonials .owl-next:hover {
+#Accommodations .owl-prev:hover,
+#Accommodations .owl-next:hover {
     color: #fff;
 }
 
@@ -826,7 +822,7 @@ ul.external li a:hover {
 .price-table > span {
     color: #252525;
     display: block;
-    font-size: 24px;
+    font-size: 32px;
     padding: 30px 0;
     text-transform: uppercase;
 }
@@ -853,7 +849,8 @@ ul.external li a:hover {
 }
 
 .price-table .value span:first-child {
-    font-size: 32px;
+    color: #008ECC;
+    font-size: 24px;
     line-height: 32px;
 }
 
@@ -1155,12 +1152,12 @@ textarea.form-control {
         margin-bottom: 30px;
     }
 
-/* portfolio */
+/* Divesite */
     figcaption.mask {
         bottom: -151px;
     }
 
-    .testimonial-item > div:after {
+    .Accommodation-item > div:after {
         bottom: -40px;
     }
 }
@@ -1198,21 +1195,21 @@ textarea.form-control {
         margin-bottom: 50px;
     }
 
-/* portfolio */
-    .portfolio-item {
+/* Divesite */
+    .Divesite-item {
         width: 48%;
     }
 
-/* testimonial */
-    .testimonial-item {
+/* Accommodation */
+    .Accommodation-item {
         width: 100%;
     }
 
-    .testimonial-item {
+    .Accommodation-item {
         width: 80%;
     }
 
-    .testimonial-item > div:after {
+    .Accommodation-item > div:after {
         bottom: -35px;
     }
 
@@ -1306,8 +1303,8 @@ textarea.form-control {
         width: 100%;
     }
 
-/*portfolio*/
-    .portfolio-item {
+/*Divesite*/
+    .Divesite-item {
         margin: 0 auto 10px;
         font-size: 14px;
         width: 280px;
@@ -1328,17 +1325,17 @@ textarea.form-control {
         font-size: 14px;
     }
 
-/* testimonial */
-    .testimonial-item {
+/* Accommodation */
+    .Accommodation-item {
         width: 95%;
     }
 
-    .testimonial-item > div:before,
-    .testimonial-item > div:after {
+    .Accommodation-item > div:before,
+    .Accommodation-item > div:after {
         background-image: none;
     }
 
-    .testimonial-item > div > span {
+    .Accommodation-item > div > span {
         margin: 30px 0 20px;
     }
 
@@ -1410,8 +1407,8 @@ textarea.form-control {
         width: 55%;
     }
 
-/* portfolio */
-    .portfolio-item {
+/* Divesite */
+    .Divesite-item {
         width: 48%;
     }
 
@@ -1419,12 +1416,12 @@ textarea.form-control {
         bottom: -132px;
     }
 
-/* testimonial */
-    .testimonial-item {
+/* Accommodation */
+    .Accommodation-item {
         width: 80%;
     }
 
-    .testimonial-item > div:before {
+    .Accommodation-item > div:before {
         bottom: 160px;
     }
 
