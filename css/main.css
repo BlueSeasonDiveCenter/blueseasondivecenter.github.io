@@ -754,11 +754,13 @@ ul.external li a:hover {
 }
 
 .Accommodation-item img {
+    width: 100%;
+    /*
     border: 3px solid #fff;
     border-radius: 50%;
     display: inline-block;
     height: auto;
-    max-width: 100px;
+    max-width: 100px;*/
 }
 
 .Accommodation-item > div {
