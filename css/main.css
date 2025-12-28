@@ -802,7 +802,8 @@ ul.external li a:hover {
 }
 
 #Accommodations .owl-buttons {
-    border: 2px solid #fff;
+    border: 3px solid #fff;
+     font-size: 40px;
     float: inherit;
 }
 
@@ -1033,7 +1034,7 @@ textarea.form-control {
 }
 
 .footer-content {
-    width: 390px;
+    width: 800px;
     margin: 0 auto;
 }
 
