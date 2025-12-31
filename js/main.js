@@ -258,7 +258,6 @@ function init() {
 		icon: 'img/icons/map-marker.png',
     });
 }
-
 // ========== END GOOGLE MAP ========== //
 
 var wow = new WOW ({

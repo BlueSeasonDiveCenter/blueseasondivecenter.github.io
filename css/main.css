@@ -516,8 +516,12 @@ h1.navbar-brand {
     background-image: url(../img/parallax/corsebg.jpg);
     padding: 0;
     color: #fff;
+    
 }
-
+#Course .overlay {
+    background-color: rgba(86, 156, 249, 0.517);
+    padding: 70px 0 40px;
+}
 
 #Course h3 {
     color: #fff;
@@ -743,7 +747,7 @@ ul.external li a:hover {
 }
 
 #Accommodations .overlay {
-    background-color: rgba(15,155,224, 0.78);
+    background-color: rgba(86, 156, 249, 0.517);
     padding: 70px 0 40px;
 }
 
