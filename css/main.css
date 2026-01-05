@@ -198,8 +198,12 @@ main > section {
     background-repeat: no-repeat;
     background-size: cover;
 }
-
-
+.parallax h3{
+    font-weight:bold
+}
+.collapse li{
+    font-weight:bold
+}
 /**
 /*	Preloader
 /* ==========================================*/
@@ -519,7 +523,7 @@ h1.navbar-brand {
     
 }
 #Course .overlay {
-    background-color: rgba(86, 156, 249, 0.517);
+    background-color: rgba(0, 110, 255, 0.552);
     padding: 70px 0 40px;
 }
 
@@ -645,7 +649,7 @@ h1.navbar-brand {
 
 figcaption.mask {
     background-color: rgba(54, 55, 50, 0.79);
-    bottom: -126px;
+    bottom: -100%;
     color: #fff;
     padding: 25px;
     position: absolute;
@@ -747,7 +751,7 @@ ul.external li a:hover {
 }
 
 #Accommodations .overlay {
-    background-color: rgba(86, 156, 249, 0.517);
+    background-color: rgba(0, 110, 255, 0.552);
     padding: 70px 0 40px;
 }
 
@@ -1192,10 +1196,9 @@ textarea.form-control {
 /* Course */
     .recent-works {
         margin-bottom: 50px;
-        background-color: rgba(255,255,255, 0.7); 
         border-radius: 10px;
         padding: 10px;
-        color: black;
+        
     }
 
     .service-item {
