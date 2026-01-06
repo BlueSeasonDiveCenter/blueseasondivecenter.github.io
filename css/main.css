@@ -50,7 +50,7 @@ a, a:hover, a:focus, .btn:focus {
 h1, h2, h3, h4, h5, h6,
 .h1, .h2, .h3, .h4, .h5, .h6 {
     font-family: 'Open Sans', sans-serif;
-    color: #252525;
+    
 }
 
 main > section {
@@ -204,6 +204,9 @@ main > section {
 .collapse li{
     font-weight:bold
 }
+nav.navbar-collapse ul#nav > li > a:hover {
+  color: #00bcd4;
+}
 /**
 /*	Preloader
 /* ==========================================*/
@@ -283,28 +286,53 @@ main > section {
          -o-transition: all 0.8s ease 0s;
             transition: all 0.8s ease 0s;
 
-    background-color: rgba(0,0,0,.4);
+    background-color:#f5fbff;
     box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3);
-    padding: 5px 0;
+    padding: 50x 0;
 }
 
 #navigation.animated-header {
-    padding: 20px 0;
+    padding: 0 0;
 }
 
 h1.navbar-brand {
     font-size: 20px;
-    font-weight: 700;
-    margin: 0;
     text-transform: uppercase;
+    height: 100px;
+    font-weight: bold;
+    color:#008ECC;
 }
+/*navigation*/
+    .navbar-inverse .navbar-toggle {
+        border-color: #fff;
+    }
 
+    .navbar-inverse .navbar-toggle:hover,
+    .navbar-inverse .navbar-toggle:focus {
+        background-color: transparent;
+        color:#008ECC;
+    }
+    
+.navbar-nav{
+    height: 150px;
+    display: flex;
+  align-items: center; 
+}
 .navbar-inverse .navbar-nav > li > a {
-    color: #fff;
-    font-size: 15px;
+    color:#008ECC;
+    font-size: 16px;
     text-transform: uppercase;
 }
-
+#nav > li > a:after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  bottom: 10px;
+  width: 0;
+  height: 2px;
+  background-color: #00bcd4;
+  transition: all 0.3s ease;
+}
 
 /*=================================================================
 	Home Slider
@@ -352,15 +380,16 @@ h1.navbar-brand {
     left: 0;
     min-height: 100%;
     position: absolute;
-    text-align: center;
+    text-align:center;
     top: 0;
     width: 100%;
     z-index: 11;
 }
 
 .slide-caption .caption-content {
-    vertical-align:middle;
-    
+    vertical-align:bottom;
+    max-width: 90%;
+  text-align: center;
     display: table-cell;
 }
 
@@ -370,6 +399,9 @@ h1.navbar-brand {
     font-weight: 400;
     margin-bottom: 25px;
     text-transform: uppercase;
+    position: relative;
+    white-space: normal;
+  word-break: break-word;
 }
 
 .caption-content > span {
@@ -377,6 +409,7 @@ h1.navbar-brand {
     font-size: 24px;
     margin-bottom: 45px;
     text-transform: capitalize;
+    position: relative;
 }
 
 .caption-content p {
@@ -611,13 +644,6 @@ h1.navbar-brand {
     color: #009ee3;
 }
 */
-.service-icon i {
-    -webkit-transform: rotate(-48deg);
-       -moz-transform: rotate(-48deg);
-        -ms-transform: rotate(-48deg);
-         -o-transform: rotate(-48deg);
-            transform: rotate(-48deg);
-}
 
 .service-item h3 {
     font-size: 20px;
@@ -1198,8 +1224,11 @@ textarea.form-control {
         margin-bottom: 50px;
         border-radius: 10px;
         padding: 10px;
-        
     }
+    .work-item {
+        padding: 25px;
+        margin-bottom: 35px;
+        }
 
     .service-item {
         margin-bottom: 50px;
@@ -1257,15 +1286,7 @@ textarea.form-control {
         left: 30%;
     }
 
-/*navigation*/
-    .navbar-inverse .navbar-toggle {
-        border-color: #fff;
-    }
 
-    .navbar-inverse .navbar-toggle:hover,
-    .navbar-inverse .navbar-toggle:focus {
-        background-color: transparent;
-    }
 
 /* slider */
     .caption-content h2 {
