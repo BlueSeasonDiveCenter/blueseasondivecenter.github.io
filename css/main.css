@@ -286,9 +286,9 @@ nav.navbar-collapse ul#nav > li > a:hover {
          -o-transition: all 0.8s ease 0s;
             transition: all 0.8s ease 0s;
 
-    background-color:#f5fbff;
+    background-color:#c9e6fadb;
     box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3);
-    padding: 50x 0;
+    padding: 0 0;
 }
 
 #navigation.animated-header {
@@ -298,12 +298,13 @@ nav.navbar-collapse ul#nav > li > a:hover {
 h1.navbar-brand {
     font-size: 20px;
     text-transform: uppercase;
-    height: 100px;
+    height: 80px;
     font-weight: bold;
     color:#008ECC;
 }
 /*navigation*/
     .navbar-inverse .navbar-toggle {
+        margin:;
         border-color: #fff;
     }
 
@@ -314,7 +315,7 @@ h1.navbar-brand {
     }
     
 .navbar-nav{
-    height: 150px;
+    height: 100px;
     display: flex;
   align-items: center; 
 }
@@ -325,7 +326,7 @@ h1.navbar-brand {
 }
 #nav > li > a:after {
   content: "";
-  position: absolute;
+
   left: 50%;
   bottom: 10px;
   width: 0;
@@ -387,7 +388,7 @@ h1.navbar-brand {
 }
 
 .slide-caption .caption-content {
-    vertical-align:bottom;
+    vertical-align:top;
     max-width: 90%;
   text-align: center;
     display: table-cell;
@@ -398,6 +399,7 @@ h1.navbar-brand {
     font-size: 52px;
     font-weight: 400;
     margin-bottom: 25px;
+    margin-top: 10%;
     text-transform: uppercase;
     position: relative;
     white-space: normal;
@@ -521,7 +523,7 @@ h1.navbar-brand {
 } */
 
 
-/* Project laughtbox setup */
+/* Project laughtbox setup 放大镜按钮弹窗*/
 
 .fancybox-item.fancybox-close {
     background: url("../img/icons/close.png") no-repeat scroll 0 0 transparent;
@@ -556,7 +558,7 @@ h1.navbar-brand {
     
 }
 #Course .overlay {
-    background-color: rgba(0, 110, 255, 0.552);
+    background-color: rgba(2, 89, 203, 0.552);
     padding: 70px 0 40px;
 }
 
@@ -565,7 +567,13 @@ h1.navbar-brand {
     margin: 0 0 35px;
     text-transform: uppercase;
 }
-
+#Course .work-item{
+     background-color: rgba(255, 255, 255, 0.6);
+    border-radius: 10px; 
+    margin-top: 20px;
+    padding: 20px;
+    color: #727272;
+}
 #Course .welcome-block h3 {
     margin: 0 0 65px;
 }
@@ -670,7 +678,7 @@ h1.navbar-brand {
     margin: 0 1% 1% 0;
     overflow: hidden;
     position: relative;
-    width: 32%;
+    width: 48%;
 }
 
 figcaption.mask {
@@ -1191,13 +1199,22 @@ textarea.form-control {
 
 /* Divesite */
     figcaption.mask {
-        bottom: -151px;
+        bottom: -100%;
     }
 
     .Accommodation-item > div:after {
         bottom: -40px;
     }
 }
+/*navigation*/
+    .navbar-inverse .navbar-toggle {
+        border-color: #fff;
+    }
+
+    .navbar-inverse .navbar-toggle:hover,
+    .navbar-inverse .navbar-toggle:focus {
+        background-color: transparent;
+    }
 
 
 /*============================================================
@@ -1218,6 +1235,15 @@ textarea.form-control {
     .caption-content strong {
         font-size: 45px;
     }
+    .navbar-nav{
+    height: 60px;
+    width: 80%;
+
+  align-items: center; 
+}
+.navbar-inverse .navbar-nav > li > a {
+    font-size: 12px;
+}
 
 /* Course */
     .recent-works {
@@ -1236,7 +1262,7 @@ textarea.form-control {
 
 /* Divesite */
     .Divesite-item {
-        width: 48%;
+        width: 100%;
     }
 
 /* Accommodation */
@@ -1287,10 +1313,19 @@ textarea.form-control {
     }
 
 
+    }
+ .navbar-inverse .navbar-toggle {
+        border-color: #fff;
+    }
 
+    .navbar-inverse .navbar-toggle:hover,
+    .navbar-inverse .navbar-toggle:focus {
+        background-color: transparent;
+    }
 /* slider */
     .caption-content h2 {
-        font-size: 18px;
+        font-size: 25px;
+        margin-top: 25%;
     }
 
     .caption-content > span {
@@ -1342,7 +1377,7 @@ textarea.form-control {
     }
 
     figcaption.mask {
-        bottom: -107px;
+        bottom: -100%;
         color: #fff;
         padding: 15px;
     }
@@ -1414,8 +1449,8 @@ textarea.form-control {
 
 /* home slider */
     .caption-content h2 {
-        font-size: 35px;
-    }
+    margin-top: 25%;
+}
 
     .caption-content p {
         font-size: 25px;
@@ -1440,11 +1475,11 @@ textarea.form-control {
 
 /* Divesite */
     .Divesite-item {
-        width: 48%;
+        width: 100%;
     }
 
     figcaption.mask {
-        bottom: -132px;
+        bottom: -100%;
     }
 
 /* Accommodation */
