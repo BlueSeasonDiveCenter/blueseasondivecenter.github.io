@@ -304,7 +304,6 @@ h1.navbar-brand {
 }
 /*navigation*/
     .navbar-inverse .navbar-toggle {
-        margin:;
         border-color: #fff;
     }
 
@@ -314,19 +313,16 @@ h1.navbar-brand {
         color:#008ECC;
     }
     
-.navbar-nav{
-    height: 100px;
-    display: flex;
-  align-items: center; 
-}
 .navbar-inverse .navbar-nav > li > a {
     color:#008ECC;
     font-size: 16px;
     text-transform: uppercase;
+    text-align:center;
+    
 }
 #nav > li > a:after {
   content: "";
-
+  position: absolute;
   left: 50%;
   bottom: 10px;
   width: 0;
@@ -1225,7 +1221,8 @@ textarea.form-control {
 
 /* home slider  */
     .caption-content h2 {
-        font-size: 40px;
+        font-size: 30px;
+        margin-top: 25%;
     }
 
     .caption-content p {
@@ -1235,16 +1232,6 @@ textarea.form-control {
     .caption-content strong {
         font-size: 45px;
     }
-    .navbar-nav{
-    height: 60px;
-    width: 80%;
-
-  align-items: center; 
-}
-.navbar-inverse .navbar-nav > li > a {
-    font-size: 12px;
-}
-
 /* Course */
     .recent-works {
         margin-bottom: 50px;
@@ -1311,9 +1298,11 @@ textarea.form-control {
     .sec-title h2:after {
         left: 30%;
     }
-
-
+    .caption-content h2 {
+        font-size: 18px;
+        margin-top: 25%;
     }
+    
  .navbar-inverse .navbar-toggle {
         border-color: #fff;
     }
@@ -1323,11 +1312,6 @@ textarea.form-control {
         background-color: transparent;
     }
 /* slider */
-    .caption-content h2 {
-        font-size: 25px;
-        margin-top: 25%;
-    }
-
     .caption-content > span {
         font-size: 16px;
         margin-bottom: 20px;
@@ -1373,7 +1357,7 @@ textarea.form-control {
     .Divesite-item {
         margin: 0 auto 10px;
         font-size: 14px;
-        width: 280px;
+        width: 100%;
     }
 
     figcaption.mask {
