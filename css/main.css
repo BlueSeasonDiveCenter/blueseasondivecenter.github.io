@@ -289,6 +289,7 @@ nav.navbar-collapse ul#nav > li > a:hover {
     background-color:#c9e6fadb;
     box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3);
     padding: 0 0;
+    text-align: left;
 }
 
 #navigation.animated-header {
@@ -298,11 +299,14 @@ nav.navbar-collapse ul#nav > li > a:hover {
 h1.navbar-brand {
     font-size: 20px;
     text-transform: uppercase;
-    height: 80px;
     font-weight: bold;
     color:#008ECC;
 }
+
 /*navigation*/
+.collapse{
+    margin-top: 2%;
+}
     .navbar-inverse .navbar-toggle {
         border-color: #fff;
     }
@@ -312,7 +316,10 @@ h1.navbar-brand {
         background-color: transparent;
         color:#008ECC;
     }
-    
+.logo{
+    height: 80px; 
+    float: left;
+} 
 .navbar-inverse .navbar-nav > li > a {
     color:#008ECC;
     font-size: 16px;
@@ -554,7 +561,7 @@ h1.navbar-brand {
     
 }
 #Course .overlay {
-    background-color: rgba(2, 89, 203, 0.552);
+    background-color: rgba(0, 110, 255, 0.1);
     padding: 70px 0 40px;
 }
 
@@ -564,11 +571,11 @@ h1.navbar-brand {
     text-transform: uppercase;
 }
 #Course .work-item{
-     background-color: rgba(255, 255, 255, 0.6);
+     background-color: rgba(83, 82, 82, 0.5);
     border-radius: 10px; 
     margin-top: 20px;
     padding: 20px;
-    color: #727272;
+
 }
 #Course .welcome-block h3 {
     margin: 0 0 65px;
@@ -781,8 +788,8 @@ ul.external li a:hover {
 }
 
 #Accommodations .overlay {
-    background-color: rgba(0, 110, 255, 0.552);
-    padding: 70px 0 40px;
+    background-color: rgba(0, 110, 255, 0.1);
+    padding: 40px 0 40px;
 }
 
 .Accommodation-item {
@@ -1232,6 +1239,9 @@ textarea.form-control {
     .caption-content strong {
         font-size: 45px;
     }
+        .navbar-nav img{
+    height: 70px; 
+}
 /* Course */
     .recent-works {
         margin-bottom: 50px;
@@ -1278,7 +1288,7 @@ textarea.form-control {
 
 
 /*============================================================
-	Mobile (Portrait) Design for a width of 320px
+	Mobile (Portrait) Design for a width of 767px
 ==============================================================*/
 
 @media only screen and (max-width: 767px) {
@@ -1302,7 +1312,10 @@ textarea.form-control {
         font-size: 18px;
         margin-top: 25%;
     }
-    
+    .navbar-nav img{
+    height: 50px; 
+
+}
  .navbar-inverse .navbar-toggle {
         border-color: #fff;
     }
@@ -1443,7 +1456,9 @@ textarea.form-control {
     .caption-content strong {
         font-size: 35px;
     }
-
+    .navbar-nav img{
+    height: 50px; 
+}
 /*Course*/
 
     #Course .welcome-block h3 {
