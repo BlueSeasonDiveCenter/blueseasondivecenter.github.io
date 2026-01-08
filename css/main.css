@@ -317,9 +317,10 @@ h1.navbar-brand {
         color:#008ECC;
     }
 .logo{
-    height: 80px; 
-    width: auto;
-  display: block;
+    height: 80px;
+  width: auto;
+  display: block; 
+  float: left; 
 
 } 
 .navbar-inverse .navbar-nav > li > a {
@@ -1241,9 +1242,7 @@ textarea.form-control {
     .caption-content strong {
         font-size: 45px;
     }
-     .logo{
-    height: 70px; 
-}
+  
 /* Course */
     .recent-works {
         margin-bottom: 50px;
@@ -1314,10 +1313,7 @@ textarea.form-control {
         font-size: 18px;
         margin-top: 25%;
     }
-    .logo{
-    height: 50px; 
 
-}
  .navbar-inverse .navbar-toggle {
         border-color: #fff;
     }
@@ -1458,9 +1454,6 @@ textarea.form-control {
     .caption-content strong {
         font-size: 35px;
     }
-    .logo{
-    height: 50px; 
-}
 /*Course*/
 
     #Course .welcome-block h3 {
