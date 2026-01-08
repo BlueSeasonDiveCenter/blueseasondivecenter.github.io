@@ -319,6 +319,10 @@ h1.navbar-brand {
 .logo{
     height: 80px; 
     float: left;
+    display: flex;
+    align-items: center; 
+
+
 } 
 .navbar-inverse .navbar-nav > li > a {
     color:#008ECC;
