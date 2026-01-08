@@ -286,7 +286,7 @@ nav.navbar-collapse ul#nav > li > a:hover {
          -o-transition: all 0.8s ease 0s;
             transition: all 0.8s ease 0s;
 
-    background-color:#c9e6fadb;
+    background-color:rgba(34, 40, 55, 0.471);
     box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3);
     padding: 0 0;
     text-align: left;
@@ -308,6 +308,8 @@ h1.navbar-brand {
     margin-top: 2%;
 }
     .navbar-inverse .navbar-toggle {
+        margin-top: 20px;   /* 调到视觉居中即可 */
+    margin-bottom: 20px;
         border-color: #fff;
     }
 
@@ -315,6 +317,7 @@ h1.navbar-brand {
     .navbar-inverse .navbar-toggle:focus {
         background-color: transparent;
         color:#008ECC;
+        
     }
 .logo{
     height: 80px;
@@ -327,7 +330,7 @@ h1.navbar-brand {
     color:#008ECC;
     font-size: 16px;
     text-transform: uppercase;
-    text-align:center;
+    text-align:right;
     
 }
 #nav > li > a:after {
