@@ -562,13 +562,10 @@ h1.navbar-brand {
 
 #Course {
     background-image: url(../img/parallax/corsebg.jpg);
+    position:relative;
     padding: 0;
     color: #fff;
     
-}
-#Course .overlay {
-    background-color: rgba(0, 110, 255, 0.1);
-    padding: 70px 0 40px;
 }
 
 #Course h3 {
@@ -784,7 +781,8 @@ ul.external li a:hover {
 
 
 #Accommodations {
-    background-image: url(../img/parallax/corsebg.jpg);
+    background-image: url(../img/parallax/accommodationbg.jpg);
+    position:relative;
     padding: 0;
     color: #fff;
 }
@@ -793,7 +791,7 @@ ul.external li a:hover {
     border-bottom: 1px solid #fff;
 }
 
-#Accommodations .overlay {
+.overlay {
     background-color: rgba(0, 110, 255, 0.1);
     padding: 40px 0 40px;
 }
@@ -1303,6 +1301,7 @@ textarea.form-control {
 
     .parallax {
         background-position: centet tip !important;
+        
     }
 
     .sec-title h2 {
