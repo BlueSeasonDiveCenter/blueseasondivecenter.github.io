@@ -781,7 +781,7 @@ ul.external li a:hover {
 
 
 #Accommodations {
-    background-image: url(../img/parallax/accommodationbg.jpg);
+    background-image: url(../img/parallax/corsebg.jpg);
     position:relative;
     padding: 0;
     color: #fff;
@@ -799,17 +799,15 @@ ul.external li a:hover {
 .Accommodation-item {
     margin: 0 auto;
     padding-bottom: 50px;
-    width: 64%;
+    width: 100%;
 }
 
 .Accommodation-item img {
     width: 100%;
-    /*
     border: 3px solid #fff;
-    border-radius: 50%;
+    border-radius: 10%;
     display: inline-block;
     height: auto;
-    max-width: 100px;*/
 }
 
 .Accommodation-item > div {
@@ -1340,6 +1338,10 @@ textarea.form-control {
     }
 
 /* Course */
+.parallax {
+        background-attachment: scroll;
+        min-height: 100vh;
+    }
     .recent-works {
         margin-bottom: 85px;
     }
@@ -1443,7 +1445,10 @@ textarea.form-control {
     .sec-title h2:after {
         left: 38%;
     }
-
+.parallax {
+        background-attachment: scroll;
+        min-height: 100vh;
+    }
 /* home slider */
     .caption-content h2 {
     margin-top: 25%;
