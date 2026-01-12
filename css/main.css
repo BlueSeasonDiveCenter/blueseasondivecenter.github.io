@@ -1313,7 +1313,9 @@ textarea.form-control {
   }
 
   .sec-title h2:after {
-    left: 30%;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
   }
   .caption-content h2 {
     font-size: 18px;
