@@ -1526,3 +1526,16 @@ textarea.form-control {
     width: 380px;
   }
 }
+
+/* Responsive Divesite Image */
+.divesite-header-img {
+    width: 100%;
+}
+
+@media (max-width: 764px) {
+    .divesite-header-img {
+        width: 90%;
+        margin: 0 auto;
+        display: block; /* Ensure margin: 0 auto works */
+    }
+}
