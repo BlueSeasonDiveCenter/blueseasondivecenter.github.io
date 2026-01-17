@@ -351,7 +351,7 @@ h1.navbar-brand {
   float: left;
 }
 .navbar-inverse .navbar-nav > li > a {
-  color: #008ecc;
+  color: white;
   font-size: 16px;
   text-transform: uppercase;
   text-align: right;
