@@ -1,0 +1,41 @@
+# Blue Season Camiguin — robots.txt
+# PADI Dive Center on Camiguin Island, Philippines
+
+User-agent: *
+Allow: /
+Disallow: /img/.DS_Store
+Disallow: /.DS_Store
+
+# Explicitly welcome major search engines
+User-agent: Googlebot
+Allow: /
+
+User-agent: Googlebot-Image
+Allow: /img/
+
+User-agent: Bingbot
+Allow: /
+
+User-agent: DuckDuckBot
+Allow: /
+
+User-agent: Baiduspider
+Allow: /
+
+User-agent: YandexBot
+Allow: /
+
+# Block known bad / wasteful crawlers
+User-agent: AhrefsBot
+Disallow: /
+
+User-agent: SemrushBot
+Disallow: /
+
+User-agent: MJ12bot
+Disallow: /
+
+User-agent: DotBot
+Disallow: /
+
+Sitemap: https://camiguindiver.com/sitemap.xml

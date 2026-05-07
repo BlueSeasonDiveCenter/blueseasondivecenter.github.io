@@ -1,173 +1,147 @@
-// Preloader removed for performance
+/* ============================================
+   Blue Season Camiguin — Main JavaScript
+   ============================================ */
 
-/* ========================================================================= */
-/*  Welcome Section Slider
-/* ========================================================================= */
+document.addEventListener('DOMContentLoaded', function () {
 
-$(function() {
+  /* ---------- Navbar scroll effect ---------- */
+  const navbar = document.querySelector('.navbar');
+  if (navbar) {
+    function updateNavbar() {
+      if (window.scrollY > 40) {
+        navbar.classList.add('scrolled');
+      } else {
+        navbar.classList.remove('scrolled');
+      }
+    }
+    window.addEventListener('scroll', updateNavbar, { passive: true });
+    updateNavbar();
+  }
 
-    var Page = (function() {
+  /* ---------- Mobile menu toggle ---------- */
+  const navToggle = document.querySelector('.nav-toggle');
+  const navMenu = document.querySelector('.nav-menu');
+  const navOverlay = document.querySelector('.nav-overlay');
 
-        var $navArrows = $( '#nav-arrows' ),
-            $nav = $( '#nav-dots > span' ),
-            slitslider = $( '#slider' ).slitslider( {
-                onBeforeChange : function( slide, pos ) {
+  function openMenu() {
+    navbar.classList.add('menu-open');
+    navToggle.classList.add('active');
+    navMenu.classList.add('open');
+    if (navOverlay) navOverlay.classList.add('active');
+    document.body.style.overflow = 'hidden';
+  }
 
-                    $nav.removeClass( 'nav-dot-current' );
-                    $nav.eq( pos ).addClass( 'nav-dot-current' );
+  function closeMenu() {
+    navbar.classList.remove('menu-open');
+    navToggle.classList.remove('active');
+    navMenu.classList.remove('open');
+    if (navOverlay) navOverlay.classList.remove('active');
+    document.body.style.overflow = '';
+  }
 
-                }
-            } ),
+  if (navToggle && navMenu) {
+    navToggle.addEventListener('click', function () {
+      if (navMenu.classList.contains('open')) {
+        closeMenu();
+      } else {
+        openMenu();
+      }
+    });
 
-            init = function() {
+    // Close menu when overlay is tapped
+    if (navOverlay) {
+      navOverlay.addEventListener('click', closeMenu);
+    }
 
-                initEvents();
-                
-            },
-            initEvents = function() {
+    // Close menu when a link is clicked
+    navMenu.querySelectorAll('a').forEach(function (link) {
+      link.addEventListener('click', closeMenu);
+    });
+  }
 
-                // add navigation events
-                $navArrows.children( ':last' ).on( 'click', function() {
-
-                    slitslider.next();
-                    return false;
-
-                } );
-
-                $navArrows.children( ':first' ).on( 'click', function() {
-                    
-                    slitslider.previous();
-                    return false;
-
-                } );
-
-                $nav.each( function( i ) {
-                
-                    $( this ).on( 'click', function( event ) {
-                        
-                        var $dot = $( this );
-                        
-                        if( !slitslider.isActive() ) {
-
-                            $nav.removeClass( 'nav-dot-current' );
-                            $dot.addClass( 'nav-dot-current' );
-                        
-                        }
-                        
-                        slitslider.jump( i + 1 );
-                        return false;
-                    
-                    } );
-                    
-                } );
-
-            };
-
-            return { init : init };
-
-    })();
-
-    Page.init();
-
-});
-
-
-
-$(document).ready(function(){
-
-	/* ========================================================================= */
-	/*	Menu item highlighting
-	/* ========================================================================= */
-
-	jQuery('#nav').singlePageNav({
-		offset: jQuery('#nav').outerHeight(),
-		filter: ':not(.external)',
-		speed: 2000,
-		currentClass: 'current',
-		easing: 'easeInOutExpo',
-		updateHash: true,
-		beforeStart: function() {
-			console.log('begin scrolling');
-		},
-		onComplete: function() {
-			console.log('done scrolling');
-		}
-	});
-	
-    $(window).scroll(function () {
-        if ($(window).scrollTop() > 400) {
-            $(".navbar-brand a").css("color","#fff");
-            $("#navigation").removeClass("animated-header");
-        } else {
-            $(".navbar-brand a").css("color","inherit");
-            $("#navigation").addClass("animated-header");
+  /* ---------- Scroll reveal animation ---------- */
+  const revealElements = document.querySelectorAll('.glass-card, .feature-card, .site-card, .course-card, .site-detail, .accommodation-grid, .contact-method');
+  if (revealElements.length > 0 && 'IntersectionObserver' in window) {
+    const revealObserver = new IntersectionObserver(function (entries) {
+      entries.forEach(function (entry) {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('revealed');
+          revealObserver.unobserve(entry.target);
         }
+      });
+    }, { threshold: 0.1, rootMargin: '0px 0px -40px 0px' });
+
+    revealElements.forEach(function (el) {
+      el.style.opacity = '0';
+      el.style.transform = 'translateY(20px)';
+      el.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
+      revealObserver.observe(el);
     });
-	
-	/* ========================================================================= */
-	/*	Fix Slider Height
-	/* ========================================================================= */	
+  }
 
-    // Slider Height
-    var slideHeight = $(window).height();
-    
-    $('#home-slider, #slider, .sl-slider, .sl-content-wrapper').css('height',slideHeight);
-
-    $(window).resize(function(){'use strict',
-        $('#home-slider, #slider, .sl-slider, .sl-content-wrapper').css('height',slideHeight);
+  /* ---------- Smooth scroll for anchor links ---------- */
+  document.querySelectorAll('a[href^="#"]').forEach(function (anchor) {
+    anchor.addEventListener('click', function (e) {
+      var targetId = this.getAttribute('href');
+      if (targetId === '#') return;
+      var target = document.querySelector(targetId);
+      if (target) {
+        e.preventDefault();
+        var navHeight = document.querySelector('.navbar') ? document.querySelector('.navbar').offsetHeight : 0;
+        var top = target.getBoundingClientRect().top + window.pageYOffset - navHeight;
+        window.scrollTo({ top: top, behavior: 'smooth' });
+      }
     });
-	
-	
-	
-	$("#works, #Accommodation").owlCarousel({	 
-		navigation : true,
-		pagination : false,
-		slideSpeed : 700,
-		paginationSpeed : 400,
-		singleItem:true,
-		navigationText: ["<i class='fa fa-angle-left fa-lg'></i>","<i class='fa fa-angle-right fa-lg'></i>"]
-	});
-	
-	
-	/* ========================================================================= */
-	/*	Featured Project Lightbox
-	/* ========================================================================= */
+  });
 
-	$(".fancybox").fancybox({
-		padding: 0,
+  /* ---------- Disable selection / copy / paste / context menu ---------- */
+  function isFormField(el) {
+    if (!el) return false;
+    var tag = el.tagName;
+    return tag === 'INPUT' || tag === 'TEXTAREA' || tag === 'SELECT' || el.isContentEditable;
+  }
 
-		openEffect : 'elastic',
-		openSpeed  : 650,
+  document.addEventListener('contextmenu', function (e) {
+    if (!isFormField(e.target)) e.preventDefault();
+  });
 
-		closeEffect : 'elastic',
-		closeSpeed  : 550,
+  document.addEventListener('selectstart', function (e) {
+    if (!isFormField(e.target)) e.preventDefault();
+  });
 
-		closeClick : true,
-			
-		beforeShow: function () {
-			this.title = $(this.element).attr('title');
-			this.title = '<h3>' + this.title + '</h3>' + '<p>' + $(this.element).parents('.portfolio-item').find('img').attr('alt') + '</p>';
-		},
-		
-		helpers : {
-			title : { 
-				type: 'inside' 
-			},
-			overlay : {
-				css : {
-					'background' : 'rgba(0,0,0,0.8)'
-				}
-			}
-		}
-	});
-	
+  document.addEventListener('copy', function (e) {
+    if (!isFormField(e.target)) e.preventDefault();
+  });
+
+  document.addEventListener('cut', function (e) {
+    if (!isFormField(e.target)) e.preventDefault();
+  });
+
+  document.addEventListener('dragstart', function (e) {
+    if (!isFormField(e.target)) e.preventDefault();
+  });
+
+  /* ---------- Contact form (basic) ---------- */
+  var contactForm = document.querySelector('.contact-form');
+  if (contactForm) {
+    contactForm.addEventListener('submit', function (e) {
+      e.preventDefault();
+      var formData = new FormData(contactForm);
+      var name = formData.get('name');
+      // Build WhatsApp message from form data
+      var message = 'Hello Blue Season! My name is ' + (name || 'Guest') + '. ';
+      var interest = formData.get('interest');
+      if (interest) message += 'I am interested in: ' + interest + '. ';
+      var userMessage = formData.get('message');
+      if (userMessage) message += userMessage;
+      var waUrl = 'https://wa.me/639498765618?text=' + encodeURIComponent(message);
+      window.open(waUrl, '_blank');
+    });
+  }
+
 });
 
-
-// Google Map removed for performance/access issues
-
-var wow = new WOW ({
-	offset:       75,          // distance to the element when triggering the animation (default is 0)
-	mobile:       false,       // trigger animations on mobile devices (default is true)
-});
-wow.init();
+/* ---------- Style for revealed elements ---------- */
+var style = document.createElement('style');
+style.textContent = '.revealed { opacity: 1 !important; transform: translateY(0) !important; }';
+document.head.appendChild(style);
