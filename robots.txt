@@ -1,5 +1,5 @@
 # Blue Season Camiguin — robots.txt
-# PADI Dive Center on Camiguin Island, Philippines
+# Dive Center on Camiguin Island, Philippines
 
 User-agent: *
 Allow: /

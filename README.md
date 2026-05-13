@@ -3,7 +3,7 @@ NewBlueSeason
 
 # Blue Season Camiguin — Official Website
 
-PADI Dive Center website for Blue Season Camiguin, located in Anito, Mambajao, Camiguin Island, Philippines.
+Dive Center website for Blue Season Camiguin, located in Anito, Mambajao, Camiguin Island, Philippines.
 
 **Live domain:** camiguindiver.com
 
