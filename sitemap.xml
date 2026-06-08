@@ -82,4 +82,16 @@
     <priority>0.7</priority>
   </url>
 
+  <url>
+    <loc>https://www.camiguindiver.com/promo.html</loc>
+    <lastmod>2026-06-05</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://www.camiguindiver.com/img/coral-cleanup.webp</image:loc>
+      <image:title>Crown-of-Thorns Starfish Clean-Up Event — June 2026 Camiguin</image:title>
+      <image:caption>Join Blue Season's reef clean-up at White Island, Camiguin and earn dive fee discounts</image:caption>
+    </image:image>
+  </url>
+
 </urlset>
