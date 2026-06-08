@@ -139,55 +139,6 @@ document.addEventListener('DOMContentLoaded', function () {
     });
   }
 
-  /* ---------- Promo modal (limited-time event) ---------- */
-  var promoModal = document.getElementById('promoModal');
-  if (promoModal) {
-    var PROMO_KEY = 'bs_promo_coral2026';
-    var PROMO_END = new Date('2026-07-01T00:00:00+08:00'); // Event runs through June 2026 (PH time)
-    var promoDismissed = false;
-    try { promoDismissed = sessionStorage.getItem(PROMO_KEY) === '1'; } catch (e) {}
-
-    function rememberPromo() {
-      try { sessionStorage.setItem(PROMO_KEY, '1'); } catch (e) {}
-    }
-
-    function openPromo() {
-      promoModal.classList.add('open');
-      promoModal.setAttribute('aria-hidden', 'false');
-      document.body.style.overflow = 'hidden';
-    }
-
-    function closePromo() {
-      promoModal.classList.remove('open');
-      promoModal.setAttribute('aria-hidden', 'true');
-      document.body.style.overflow = '';
-      rememberPromo();
-    }
-
-    // Show once per browser session — pops up again next time the visitor reopens the site
-    // (sessionStorage clears when the tab/browser closes; still auto-stops after the event ends)
-    if (new Date() < PROMO_END && !promoDismissed) {
-      setTimeout(openPromo, 1500);
-    }
-
-    // Close via overlay or close button
-    promoModal.querySelectorAll('[data-promo-close]').forEach(function (el) {
-      el.addEventListener('click', closePromo);
-    });
-
-    // Following a link to the details page also counts as "seen"
-    promoModal.querySelectorAll('a[href]').forEach(function (el) {
-      el.addEventListener('click', rememberPromo);
-    });
-
-    // Close on Escape
-    document.addEventListener('keydown', function (e) {
-      if ((e.key === 'Escape' || e.keyCode === 27) && promoModal.classList.contains('open')) {
-        closePromo();
-      }
-    });
-  }
-
 });
 
 /* ---------- Style for revealed elements ---------- */
