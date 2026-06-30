@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#0a1628">
+  <meta name="color-scheme" content="dark">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+
+  <!-- Google Analytics (GA4) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-VLXL5K6Y6D"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-VLXL5K6Y6D');
+  </script>
+
+  <!-- Primary SEO -->
+  <title>Camiguin Tide Times — Mambajao Tide Forecast | Blue Season</title>
+  <meta name="description"
+    content="Today's Camiguin tide times for Mambajao — current tide, next high and low, plus a 7-day tide forecast. Useful for diving, snorkeling, and beach trips on Camiguin Island.">
+  <meta name="keywords" content="camiguin tide, camiguin tide times, mambajao tide, camiguin tide today, tide forecast camiguin, white island tide, camiguin tide table, high tide camiguin, low tide camiguin">
+  <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1">
+  <meta name="author" content="Blue Season Camiguin">
+  <link rel="canonical" href="https://www.camiguindiver.com/tides.html">
+
+  <!-- Geo Tags -->
+  <meta name="geo.region" content="PH-CAM">
+  <meta name="geo.placename" content="Camiguin Island">
+  <meta name="geo.position" content="9.2517;124.7283">
+  <meta name="ICBM" content="9.2517, 124.7283">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Camiguin Tide Times — Mambajao Tide Forecast">
+  <meta property="og:description"
+    content="Current tide, next high and low, and a 7-day tide forecast for Camiguin Island, Philippines.">
+  <meta property="og:url" content="https://www.camiguindiver.com/tides.html">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Blue Season Camiguin">
+  <meta property="og:locale" content="en_US">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Camiguin Tide Times — Mambajao Tide Forecast">
+  <meta name="twitter:description" content="Current tide and 7-day tide forecast for Camiguin Island, Philippines.">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,500;0,700;1,500&display=swap"
+    rel="stylesheet">
+
+  <link rel="stylesheet" href="css/style.css">
+
+  <!-- Schema: BreadcrumbList -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {"@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.camiguindiver.com/"},
+      {"@type": "ListItem", "position": 2, "name": "Camiguin Tide Times", "item": "https://www.camiguindiver.com/tides.html"}
+    ]
+  }
+  </script>
+</head>
+
+<body>
+
+  <!-- ========== NAVIGATION ========== -->
+  <header>
+    <nav class="navbar scrolled" role="navigation" aria-label="Main navigation">
+      <div class="container">
+        <a href="index.html" class="nav-brand" aria-label="Blue Season Camiguin home">
+          <img class="nav-logo-img" src="img/logo-panda.webp" alt="Blue Season Scuba Diving Center Camiguin - Panda Diver Logo" width="1254" height="1254">
+          <span class="nav-title">BLUE SEASON</span>
+        </a>
+        <button class="nav-toggle" aria-label="Toggle navigation menu" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+        <div class="nav-menu">
+          <div class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="dive-sites.html">Dive Sites</a>
+            <a href="courses.html">Courses</a>
+            <a href="prices.html">Prices</a>
+            <a href="accommodation.html">Stay</a>
+            <a href="contact.html">Contact</a>
+            <a href="https://wa.me/639498765618?text=Hi%20Blue%20Season!%20I%27d%20like%20to%20book%20a%20dive."
+              class="btn btn-primary btn-sm nav-cta" target="_blank" rel="noopener">Book Now</a>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <div class="nav-overlay" aria-hidden="true"></div>
+  </header>
+
+  <main>
+    <!-- ========== PAGE HEADER ========== -->
+    <section class="page-header">
+      <div class="container">
+        <span class="section-label">Camiguin Tide Times</span>
+        <h1>Camiguin Tide Times — Mambajao Tide Forecast</h1>
+        <p>Live tide for Camiguin Island, Philippines: the current tide, the next high and low, and a 7-day
+          forecast. Handy for planning shore dives, snorkeling at White Island and the Sunken Cemetery, and
+          beach time. All times shown in Philippine time (Asia/Manila).</p>
+      </div>
+    </section>
+
+    <!-- ========== TIDE DATA ========== -->
+    <section class="section" style="padding-top:40px;">
+      <div class="container">
+
+        <div class="tide-metrics">
+          <div class="tide-metric">
+            <div class="label">Now</div>
+            <div class="value"><span id="tideNowState">—</span> <small id="tideNowHeight"></small></div>
+          </div>
+          <div class="tide-metric">
+            <div class="label">Next high tide</div>
+            <div class="value"><span id="tideHighTime">—</span> <small id="tideHighH"></small></div>
+          </div>
+          <div class="tide-metric">
+            <div class="label">Next low tide</div>
+            <div class="value"><span id="tideLowTime">—</span> <small id="tideLowH"></small></div>
+          </div>
+        </div>
+
+        <article class="glass-card cond-block" hidden style="margin-bottom:24px;">
+          <h2 style="margin-top:0;">Today's conditions</h2>
+          <div class="cond-strip"></div>
+        </article>
+
+        <article class="glass-card" style="margin-bottom:24px;">
+          <h2 style="margin-top:0;">7-day tide curve</h2>
+          <div id="tideWeekCurve" class="tide-curve" style="border-top:0;padding-top:6px;margin-top:0;">
+            <p class="tide-note" style="margin:0;">Loading tide forecast…</p>
+          </div>
+        </article>
+
+        <article class="glass-card">
+          <h2 style="margin-top:0;">High &amp; low tide schedule</h2>
+          <table class="tide-table">
+            <thead>
+              <tr><th>Date</th><th>High tides</th><th>Low tides</th></tr>
+            </thead>
+            <tbody id="tideTableBody">
+              <tr><td colspan="3" class="tide-note" style="border:0;">Loading…</td></tr>
+            </tbody>
+          </table>
+          <p class="tide-note">
+            Tide predictions from the Open-Meteo Marine model for Mambajao, Camiguin (9.25°N, 124.73°E),
+            shown in Philippine time. Heights are relative to mean sea level and are a planning guide — always
+            check local conditions before diving or snorkeling.
+          </p>
+        </article>
+
+      </div>
+    </section>
+
+    <!-- ========== CTA ========== -->
+    <section class="cta-section">
+      <div class="container cta-content">
+        <h2>Plan Your Dives Around the Tide</h2>
+        <p>Not sure which sites suit the conditions? Message us and we'll plan the perfect dive itinerary for
+          your dates and level.</p>
+        <div class="cta-buttons">
+          <a href="https://wa.me/639498765618?text=Hi%20Blue%20Season!%20I%27d%20like%20to%20plan%20some%20dives.%20What%20do%20you%20recommend%20for%20the%20current%20conditions?"
+            class="btn btn-whatsapp" target="_blank" rel="noopener">💬 WhatsApp Us</a>
+          <a href="dive-sites.html" class="btn btn-outline">Explore Dive Sites</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ========== FOOTER ========== -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="index.html" class="nav-brand"><img class="footer-logo-img" src="img/logo-panda.webp" alt="Blue Season Scuba Diving Center Camiguin - Panda Diver Logo" width="1254" height="1254"></a>
+          <p>Dive Center on Camiguin Island, Philippines. Discover pristine reefs, sea turtles, and the
+            Philippines' best-kept diving secret.</p>
+        </div>
+        <div>
+          <h4>Explore</h4>
+          <ul class="footer-links">
+            <li><a href="dive-sites.html">Dive Sites</a></li>
+            <li><a href="tides.html">Tide Times</a></li>
+            <li><a href="courses.html">PADI Courses</a></li>
+            <li><a href="accommodation.html">Accommodation</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Courses</h4>
+          <ul class="footer-links">
+            <li><a href="courses.html#discover">Discover Scuba</a></li>
+            <li><a href="courses.html#open-water">Open Water</a></li>
+            <li><a href="courses.html#advanced">Advanced OW</a></li>
+            <li><a href="prices.html">Fun Dives</a></li>
+          </ul>
+        </div>
+        <div class="footer-contact">
+          <h4>Get in Touch</h4>
+          <p style="white-space:nowrap;">📍 #3, Anito, Mambajao, Camiguin</p>
+          <p>💬 <a href="https://wa.me/639498765618" target="_blank" rel="noopener">+63 949 876 5618</a> · 📞 <a href="tel:+639498765618">Call</a></p>
+          <p>✉️ <a href="mailto:blue.season@outlook.com">blue.season@outlook.com</a></p>
+          <p style="margin-top:12px;">
+            <a href="https://www.facebook.com/people/Camiguin-Blue-Season-Dive-Center/61563295091419/" target="_blank"
+              rel="noopener" aria-label="Visit our Facebook page">Facebook ↗</a>
+          </p>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 Blue Season Camiguin. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+  <script src="js/tides.js"></script>
+</body>
+
+</html>

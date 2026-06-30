@@ -195,6 +195,39 @@
       </div>
     </section>
 
+    <!-- ========== TIDE WIDGET ========== -->
+    <section class="section tide-section">
+      <div class="container">
+        <div class="tide-card" id="tideCard" hidden>
+          <button class="tide-summary" id="tideToggle" type="button" aria-expanded="false" aria-controls="tidePanel">
+            <span class="tide-icon" aria-hidden="true">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round">
+                <path d="M2 12c2 0 2-3 4-3s2 3 4 3 2-3 4-3 2 3 4 3 2-3 4-3"/>
+                <path d="M2 17c2 0 2-3 4-3s2 3 4 3 2-3 4-3 2 3 4 3 2-3 4-3" opacity=".5"/>
+              </svg>
+            </span>
+            <span class="tide-main">
+              <span class="tide-label">Today's tide · Mambajao</span>
+              <span class="tide-state"><span id="tideState">Tide</span> <span class="tide-now" id="tideNow"></span></span>
+            </span>
+            <span class="tide-next">
+              <span id="tideNextHigh"></span>
+              <span class="tide-sep" aria-hidden="true">·</span>
+              <span id="tideNextLow"></span>
+            </span>
+            <span class="tide-caret" aria-hidden="true">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"/></svg>
+            </span>
+          </button>
+          <div class="tide-panel" id="tidePanel" hidden>
+            <div class="tide-curve" id="tideCurve"></div>
+          </div>
+          <div class="cond-strip cond-card" hidden></div>
+          <a class="tide-link" href="tides.html">View 7-day tide forecast →</a>
+        </div>
+      </div>
+    </section>
+
     <!-- ========== DIVE SITES ========== -->
     <section class="section" style="padding-top:40px;">
       <div class="container">
@@ -461,6 +494,7 @@
   </footer>
 
   <script src="js/main.js"></script>
+  <script src="js/tides.js"></script>
 </body>
 
 </html>
