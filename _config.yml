@@ -1,0 +1,14 @@
+# GitHub Pages (Jekyll) 配置
+#
+# 唯一用途：把尚未完工的 About 页排除出线上构建。
+# 下列文件/目录仍保留在仓库里（代码不丢），但不会被部署到 www.camiguindiver.com，
+# 线上访问 /about.html 会返回 404。
+#
+# ⚠️ About 页完工、准备上线时：删掉下面 exclude 里的这 4 行，
+#    并去掉各页导航/页脚 About 链接的 style="display:none"，
+#    以及把 about.html 里的 <meta name="robots"> 改回 index, follow。
+exclude:
+  - about.html
+  - img/team
+  - img/gear
+  - img/gallery
